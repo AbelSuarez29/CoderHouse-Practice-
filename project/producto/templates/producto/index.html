@@ -1,0 +1,13 @@
+{% extends 'core/base.html' %}
+
+{% block contenido_titulo %}
+    Hola, soy la pestaña de PRODUCTO!!!
+    <h5>soy producto</h5>
+{% endblock contenido_titulo %}
+
+{% block contenido %}
+    <ul>
+        <li><a href="{% url 'core:index' %}">Volver al inicio</a></li>
+        <li><a href="{% url 'cliente:index' %}">Ir a cliente</a></li>
+    </ul>
+{% endblock contenido %}
