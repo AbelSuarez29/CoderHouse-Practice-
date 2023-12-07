@@ -1,8 +1,8 @@
 {% extends 'core/base.html' %}
 
 {% block contenido_titulo %}
-    Hola, soy la pestaña de PRODUCTO!!!
-    <h5>soy producto</h5>
+    Productos destacados
+    <h5>Los 3 únicos juegos que tenemos</h5>
 {% endblock contenido_titulo %}
 
 {% block contenido %}
@@ -10,4 +10,28 @@
         <li><a href="{% url 'core:index' %}">Volver al inicio</a></li>
         <li><a href="{% url 'cliente:index' %}">Ir a cliente</a></li>
     </ul>
+    <div class="card" style="width: 18rem;">
+        <img src="https://images.g2a.com/360x600/1x1x1/marvels-spider-man-remastered-pc-steam-key-global-i10000302546004/7e4252006f11418bae232b83" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h2 class="card-title">Spider-Man Remastered</h2>
+          <p class="card-text">$ 66.999</p>
+          <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://images.g2a.com/360x600/1x1x1/god-of-war-pc-steam-key-global-i10000152407005/98c4f59fc39f44aaa432445e" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h2 class="card-title">God Of War</h2>
+          <p class="card-text">$ 44.999</p>
+          <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://images.g2a.com/360x600/1x1x1/the-last-of-us-part-i-pc-steam-key-global-i10000326425006/ef73efe282954a74ab9bb70f" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h2 class="card-title">The Last Of Us Part I</h2>
+          <p class="card-text">$ 44.999</p>
+          <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
 {% endblock contenido %}
