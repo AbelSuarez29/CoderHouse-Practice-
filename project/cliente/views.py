@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.contrib.auth.decorators import login_required
 
 def cliente_view(request):
     if request.method == "GET":
@@ -21,4 +22,4 @@ def cliente_view(request):
         
 
 def home(request):
-    return render(request, "cliente/index.html")
+    return render(request, "core/index.html")

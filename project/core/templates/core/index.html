@@ -2,6 +2,11 @@
 {% load static %}
 
 {% block contenido_titulo %}
+    {% if request.user.is_authenticated %}
+    <h4>
+        {{ user.username | upper }}, Bienvenido
+    </h4>
+    {% endif %}
     Comprá los mejores juegos
     <h5>Al mejor precio</h5>
 {% endblock contenido_titulo %}
